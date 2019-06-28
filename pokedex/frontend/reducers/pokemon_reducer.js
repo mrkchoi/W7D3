@@ -5,7 +5,7 @@ const pokemonReducer = (state = {}, action) => {
   const newState = lodash.assign({},state);
   switch (action.type) {
     case RECEIVE_ALL_POKEMON:
-      return action.pokemon;
+      return lodash.merge(action.pokemon,newState);
     case RECEIVE_POKEMON:
       newState[action.pokemon.pokemon.id] = action.pokemon.pokemon;
       return newState;
@@ -15,3 +15,19 @@ const pokemonReducer = (state = {}, action) => {
 }
 
 export default pokemonReducer;
+
+/*
+
+const oldObj = {
+  one: {
+    two: {
+      three: 'hello',
+      four: 'goodbye'
+    }
+  }
+}
+
+const newObj = merge({}, oldObj);
+
+newObj.one.two.four = 'goodbye';
+*/

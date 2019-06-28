@@ -103,3 +103,20 @@
    text-align: center;
    color: $black;
  }
+
+
+
+//  CUSTOM STYLES
+
+.app_container {
+  display: flex;
+  align-items: flex-start;
+}
+.sidebar_nav {
+  width: 150px;
+}
+.pokemon_detail_container {
+  flex: 1;
+  background-color: pink;
+  height: 100vh;
+}

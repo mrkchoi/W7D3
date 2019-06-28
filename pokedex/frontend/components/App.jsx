@@ -4,7 +4,11 @@ import {Route} from 'react-router-dom';
 
 const App = props => {
   return (
-    <Route path="/" component={PokemonIndexContainer} />
+    <div className="app_container">
+      <Route 
+        path="/" 
+        component={PokemonIndexContainer}/>
+    </div>
   );
 };
 

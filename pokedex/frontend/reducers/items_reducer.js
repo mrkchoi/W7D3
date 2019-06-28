@@ -6,9 +6,7 @@ const itemsReducer = (state = {}, action) => {
   const newState = lodash.assign({},state);
   switch(action.type){
     case RECEIVE_POKEMON:
-      return action.items;
-    case RECEIVE_ALL_POKEMON:
-      debugger;
+      return action.pokemon.items;
     default:
       return state;
   }

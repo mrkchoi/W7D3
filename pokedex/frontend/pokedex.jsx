@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.receivePokemon = receivePokemon;
   window.fetchPokemon = fetchPokemon;
   window.selectAllPokemon = selectAllPokemon;
+  window.fetchAllPokemon = fetchAllPokemon;
   window.lodash = lodash;
   const store = configureStore();
   window.store = store;
